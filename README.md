@@ -138,23 +138,23 @@ Indian-Crime-Trends-Predictive-Analytics
 ## Project Visualizations
 
 ### Top 15 Crime Categories
-![Top 15 Crime Categories](./visualizations/01_top_15_crime_categories.png)
+![Top 15 Crime Categories](https://raw.githubusercontent.com/Abhinav-273/Indian-crime-trends-predictive-analytics/main/visualizations/01_top_15_crime_categories.png)
 
 ### Crime Cases by Law
-![Crime Cases by Law](./visualizations/02_crime_cases_by_law.png)
+![Crime Cases by Law](https://raw.githubusercontent.com/Abhinav-273/Indian-crime-trends-predictive-analytics/main/visualizations/02_crime_cases_by_law.png)
 
 ### July vs August 2025
-![July vs August 2025](./visualizations/03_july_vs_august_2025.png)
+![July vs August 2025](https://raw.githubusercontent.com/Abhinav-273/Indian-crime-trends-predictive-analytics/main/visualizations/03_july_vs_august_2025.png)
 
 ### August 2024 vs August 2025
-![August 2024 vs August 2025](./visualizations/04_august_2024_vs_august_2025.png)
+![August 2024 vs August 2025](https://raw.githubusercontent.com/Abhinav-273/Indian-crime-trends-predictive-analytics/main/visualizations/04_august_2024_vs_august_2025.png)
 
 ### Random Forest Feature Importance
-![Random Forest Feature Importance](./visualizations/05_random_forest_feature_importance.png)
+![Random Forest Feature Importance](https://raw.githubusercontent.com/Abhinav-273/Indian-crime-trends-predictive-analytics/main/visualizations/05_random_forest_feature_importance.png)
 
 ### Actual vs Predicted
-![Actual vs Predicted](./visualizations/06_actual_vs_predicted_random_forest.png)
+![Actual vs Predicted](https://raw.githubusercontent.com/Abhinav-273/Indian-crime-trends-predictive-analytics/main/visualizations/06_actual_vs_predicted_random_forest.png)
 
 ### Model Performance Comparison
-![Model Performance Comparison](./visualizations/07_model_performance_comparison.png)
+![Model Performance Comparison](https://raw.githubusercontent.com/Abhinav-273/Indian-crime-trends-predictive-analytics/main/visualizations/07_model_performance_comparison.png)
 
