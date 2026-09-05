@@ -1,1 +1,136 @@
-# Indian Crime Trends and Predictive Analytics`r`n`r`n## Project Overview`r`n`r`nThis project analyzes Indian crime data from January to August 2025 and uses predictive analytics to estimate August 2025 crime case counts from available crime indicators.`r`n`r`n## Dataset`r`n`r`nThe dataset contains 689 records and 7 columns. It includes crime categories, legal sections, crime reasons, and case counts for January-August 2025, August 2024, July 2025, and August 2025.`r`n`r`n## Data Analysis`r`n`r`nThe project includes data cleaning, exploratory data analysis, crime category analysis, crime reason analysis, law-wise analysis, July 2025 versus August 2025 comparison, August 2024 versus August 2025 comparison, and percentage-change analysis.`r`n`r`nThe dataset contains 3 law groups, 107 crime categories, and 541 unique crime reasons. No missing values or duplicate rows were found.`r`n`r`n## Machine Learning`r`n`r`nThe target variable is Aug_2025. The features used are Jan_Aug_2025, Aug_2024, and July_2025. The data was divided into 80 percent training data and 20 percent testing data.`r`n`r`nTwo regression models were evaluated: Linear Regression and Random Forest Regressor.`r`n`r`n| Model | MAE | RMSE | R2 Score |`r`n|---|---:|---:|---:|`r`n| Linear Regression | 2.150055 | 6.138934 | 0.984600 |`r`n| Random Forest | 1.888074 | 5.432520 | 0.987941 |`r`n`r`nRandom Forest performed better than Linear Regression on the test data.`r`n`r`n## Feature Importance`r`n`r`n| Feature | Importance |`r`n|---|---:|`r`n| July 2025 | 0.619799 |`r`n| January to August 2025 | 0.305318 |`r`n| August 2024 | 0.074884 |`r`n`r`nJuly 2025 was the most important feature in the Random Forest model.`r`n`r`n## Technologies Used`r`n`r`n- Python`r`n- Pandas`r`n- NumPy`r`n- Matplotlib`r`n- Seaborn`r`n- Scikit-learn`r`n- Google Colab`r`n- Git`r`n- GitHub`r`n`r`n## Project Structure`r`n`r`n```text`r`nIndian-Crime-Trends-Predictive-Analytics`r`n|-- Data`r`n|   `-- indian-crimes-from-jan-to-aug-2025.csv`r`n|-- notebooks`r`n|   `-- Indian_Crime_Trends_Predictive_Analytics.ipynb`r`n|-- visualizations`r`n|-- README.md`r`n|-- requirements.txt`r`n`-- .gitignore`r`n````r`n`r`n## How to Run`r`n`r`n1. Clone the repository.`r`n2. Install the required libraries using `pip install -r requirements.txt`.`r`n3. Open the notebook in Google Colab or Jupyter.`r`n`r`n## Limitations`r`n`r`nThis dataset contains aggregated crime information for January to August 2025 together with August 2024 and July 2025 comparison values. Therefore, this project is a predictive analytics exercise rather than a long-term time-series forecasting system.`r`n`r`n## Future Improvements`r`n`r`n- Add multiple years of crime data.`r`n- Build time-series forecasting models.`r`n- Add state-level crime analysis.`r`n- Develop an interactive dashboard.`r`n- Add more machine learning models.`r`n- Perform hyperparameter tuning.`r`n- Deploy the model as a web application.`r`n`r`n## Author`r`n`r`nAbhinav
+powershell -NoProfile -Command "$content = @'
+# Indian Crime Trends and Predictive Analytics
+
+## Project Overview
+
+This project analyzes Indian crime data from January to August 2025 and uses predictive analytics to estimate August 2025 crime case counts from historical and recent crime indicators.
+
+The project combines data cleaning, exploratory data analysis, visualization, percentage-change analysis, and machine learning regression models.
+
+## Dataset
+
+The dataset contains 689 records and 7 columns.
+
+The main fields are:
+
+- Law under which they are registered
+- Crime and Legal Section
+- Reason
+- Number of cases from January to August 2025
+- Number of cases in August 2024
+- Number of cases in July 2025
+- Number of cases in August 2025
+
+The dataset contains 3 law groups, 107 crime categories, and 541 unique crime reasons.
+
+## Data Cleaning
+
+The following data-quality checks were performed:
+
+- Dataset dimensions were inspected.
+- Column names and data types were examined.
+- Statistical summaries were generated.
+- Missing values were checked.
+- Duplicate records were checked.
+- A cleaned DataFrame was created.
+- Columns were renamed for easier analysis.
+
+The dataset contained no missing values and no duplicate rows.
+
+## Exploratory Data Analysis
+
+The analysis includes:
+
+- Distribution of crime categories
+- Analysis of crime reasons
+- Law-wise crime analysis
+- Top crime categories from January to August 2025
+- July 2025 versus August 2025 comparison
+- August 2024 versus August 2025 comparison
+- Percentage change analysis
+- Identification of crimes with the highest increases
+- Identification of crimes with the largest decreases
+
+### Key Observations
+
+Cyber Crime under the Information Technology Act appears repeatedly among the categories with the largest percentage increases between August 2024 and August 2025.
+
+Some crime categories recorded a 100 percent decrease where the August 2024 value was greater than zero and the August 2025 value became zero.
+
+The project also highlights that percentage changes can become very large when the previous-year case count is small.
+
+## Predictive Analytics
+
+The target variable is:
+
+`Aug_2025`
+
+The following features were used:
+
+- `Jan_Aug_2025`
+- `Aug_2024`
+- `July_2025`
+
+The dataset was divided into:
+
+- Training data: 551 rows
+- Testing data: 138 rows
+
+A train-test split of 80 percent training data and 20 percent testing data was used.
+
+## Machine Learning Models
+
+Two regression models were evaluated:
+
+1. Linear Regression
+2. Random Forest Regressor
+
+### Model Performance
+
+| Model | MAE | RMSE | R2 Score |
+|---|---:|---:|---:|
+| Linear Regression | 2.150055 | 6.138934 | 0.984600 |
+| Random Forest | 1.888074 | 5.432520 | 0.987941 |
+
+Based on the evaluation metrics, Random Forest performed better than Linear Regression on the test data.
+
+## Feature Importance
+
+The Random Forest model identified the following feature importance values:
+
+| Feature | Importance |
+|---|---:|
+| July 2025 | 0.619799 |
+| January to August 2025 | 0.305318 |
+| August 2024 | 0.074884 |
+
+July 2025 was the most important feature in the Random Forest model.
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Google Colab
+- Git
+- GitHub
+
+## Project Structure
+
+```text
+Indian-Crime-Trends-Predictive-Analytics
+|
+|-- Data
+|   `-- indian-crimes-from-jan-to-aug-2025.csv
+|
+|-- notebooks
+|   `-- Indian_Crime_Trends_Predictive_Analytics.ipynb
+|
+|-- visualizations
+|
+|-- README.md
+|-- requirements.txt
+`-- .gitignore
