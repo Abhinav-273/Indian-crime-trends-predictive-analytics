@@ -1,4 +1,3 @@
-powershell -NoProfile -Command "$content = @'
 # Indian Crime Trends and Predictive Analytics
 
 ## Project Overview
@@ -134,6 +133,7 @@ Indian-Crime-Trends-Predictive-Analytics
 |-- README.md
 |-- requirements.txt
 `-- .gitignore
+```
 
 ## Project Visualizations
 
